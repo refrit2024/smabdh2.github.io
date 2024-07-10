@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ReFriT</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+         <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="icons/475-SMA_BUDHAYA_2_ST_AGUSTINUS.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()" style="color:white;" ></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars"  onclick="showMenu()" style="color:white;"></i>
+            </nav>
+            <h1>Hubungi Kami</h1>
+         </section>
+        <!--- contact us --->
+         <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3243507691573!2d106.91898878885497!3d-6.2208913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698caf6f76c20b%3A0x1682b638a1ffaa7a!2sSekolah%20Dasar%20(SD)%20Budhaya%20II%20St%20Agustinus!5e0!3m2!1sid!2sid!4v1719405312049!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </section>
+         <section class="contact-us">
+            <div class="row">
+                    <div class="contact-col">
+                    <div>
+                        <i class="fa-solid fa-house"></i>
+                        <span>
+                              <h5>Jalan Raya Raden Inten II kode 13440 Jakarta Timur</h5>
+                              <p>Alamat</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>
+                              <h5>021-8630746</h5>
+                              <p>Nomor Telepon</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>
+                              <h5>sma_bdh2@yahoo.co.id</h5>
+                              <p>Email</p>
+                        </span>
+                    </div>    
+                    </div>
+              
+                
+         </section>
+         <!--- Footer --->
+         <section class="Footer">
+                <h4>About Us</h4>
+                <p>Sekolah kami berkomitmen untuk menyediakan lingkungan belajar yang mendukung dan inklusif <br>yang mendorong keunggulan akademik, pertumbuhan pribadi, dan tanggung jawab sosial. </p>
+                <div class="icons">
+                    <i class="fa-brands fa-square-instagram" onclick="redirInstagram()"></i>
+                </div>
+                <script>
+                    function redirInstagram() {
+                        window.location.href="https://instagram.com/osisbudhaya2jkt"
+                    }
+                </script>
+         </section>
+         <!-------JavaScript for Toggle Menu------->
+         <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right= "-200px";
+            }
+         </script>
+    </body>
+</html>
